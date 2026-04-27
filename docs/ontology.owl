@@ -1,0 +1,1077 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#"
+     xml:base="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc"
+     xmlns:doc="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-27</terms:created>
+        <terms:creator>naiel-fernandez</terms:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">MedTech Safety &amp; Traceability Ontology (EUDAMED-MDR)</terms:title>
+        <rdfs:comment xml:lang="en">Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions.</rdfs:comment>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"/>
+        <rdfs:comment xml:lang="en">Connects a corrective action (FSCA) to the incident it addresses.</rdfs:comment>
+        <rdfs:label xml:lang="en">addresses incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#affectsDeviceType -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#affectsDeviceType">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:comment xml:lang="en">Links a specific risk category to the types of devices it generally affects.</rdfs:comment>
+        <rdfs:label xml:lang="en">affects device type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Links an incident to the identified IMDRF risk category.</rdfs:comment>
+        <rdfs:label xml:lang="en">associated with risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Links a medical device to its manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">has manufacturer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:comment xml:lang="en">Indicates the medical device involved in a specific incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">involves device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturesDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturesDevice">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:comment xml:lang="en">Links a manufacturer to the devices it produces (Inverse of hasManufacturer).</rdfs:comment>
+        <rdfs:label xml:lang="en">manufactures device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"/>
+        <rdfs:range rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Identifies the manufacturer that reported the incident to EUDAMED.</rdfs:comment>
+        <rdfs:label xml:lang="en">reported by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity -->
+
+
+    <owl:ObjectProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">The severity level of a risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">severity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#action_date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#action_date">
+        <rdfs:comment xml:lang="en">The date when the corrective action was initiated.</rdfs:comment>
+        <rdfs:label xml:lang="en">action_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#authorization_number -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#authorization_number">
+        <rdfs:comment xml:lang="en">The regulatory authorization number of the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">authorization_number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#closure_date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#closure_date">
+        <rdfs:comment xml:lang="en">The date when the corrective action was officially closed.</rdfs:comment>
+        <rdfs:label xml:lang="en">closure_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#competent_authority -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#competent_authority">
+        <rdfs:comment xml:lang="en">The national authority overseeing the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">competent_authority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#contact_email -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#contact_email">
+        <rdfs:comment xml:lang="en">Contact email for the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">contact_email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#corrective_action_taken -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#corrective_action_taken">
+        <rdfs:comment xml:lang="en">Indicates if a corrective action was taken following the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">corrective_action_taken</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#countries_affected -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#countries_affected">
+        <rdfs:comment xml:lang="en">List of countries affected by the incident or FSCA.</rdfs:comment>
+        <rdfs:label xml:lang="en">countries_affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country">
+        <rdfs:comment xml:lang="en">The country of origin for the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">country</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country_reported -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country_reported">
+        <rdfs:comment xml:lang="en">The country where the incident occurred.</rdfs:comment>
+        <rdfs:label xml:lang="en">country_reported</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#description -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#description">
+        <rdfs:comment xml:lang="en">A textual description of the event, risk, or action.</rdfs:comment>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#detection_date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#detection_date">
+        <rdfs:comment xml:lang="en">The date when the incident was first detected.</rdfs:comment>
+        <rdfs:label xml:lang="en">detection_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_id">
+        <rdfs:comment xml:lang="en">The unique internal identifier for the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_name">
+        <rdfs:comment xml:lang="en">The commercial name of the medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#devices_affected -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#devices_affected">
+        <rdfs:comment xml:lang="en">The number of device units affected by a recall or alert.</rdfs:comment>
+        <rdfs:label xml:lang="en">devices_affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_fsca_ref -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_fsca_ref">
+        <rdfs:comment xml:lang="en">The official EUDAMED reference number for the FSCA.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_fsca_ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_incident_ref -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_incident_ref">
+        <rdfs:comment xml:lang="en">The official EUDAMED reference number for the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_incident_ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_srn -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_srn">
+        <rdfs:comment xml:lang="en">The Single Registration Number of the manufacturer in EUDAMED.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_srn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#event_date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#event_date">
+        <rdfs:comment xml:lang="en">The exact date the adverse event took place.</rdfs:comment>
+        <rdfs:label xml:lang="en">event_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#fsca_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#fsca_id">
+        <rdfs:comment xml:lang="en">The unique identifier for the Field Safety Corrective Action.</rdfs:comment>
+        <rdfs:label xml:lang="en">fsca_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#imdrf_code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#imdrf_code">
+        <rdfs:comment xml:lang="en">The official IMDRF code identifying the type of risk or event.</rdfs:comment>
+        <rdfs:label xml:lang="en">imdrf_code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#incident_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#incident_id">
+        <rdfs:comment xml:lang="en">The unique identifier for the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">incident_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#intended_purpose -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#intended_purpose">
+        <rdfs:comment xml:lang="en">The medical purpose for which the device is intended.</rdfs:comment>
+        <rdfs:label xml:lang="en">intended_purpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_active -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_active">
+        <rdfs:domain rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice"/>
+        <rdfs:comment xml:lang="en">Boolean flag indicating if the device is active (powered).</rdfs:comment>
+        <rdfs:label xml:lang="en">is_active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_implantable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_implantable">
+        <rdfs:comment xml:lang="en">Boolean flag indicating if the device is implantable.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_implantable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_ivd -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_ivd">
+        <rdfs:comment xml:lang="en">Boolean flag indicating if the device is an IVD.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_ivd</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_reusable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_reusable">
+        <rdfs:comment xml:lang="en">Boolean flag indicating if the device is reusable.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_reusable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturer_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturer_id">
+        <rdfs:comment xml:lang="en">The unique identifier for the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">manufacturer_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#name">
+        <rdfs:comment xml:lang="en">The name of the entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#outcome -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#outcome">
+        <rdfs:comment xml:lang="en">The clinical outcome of the patient following the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">outcome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_age -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_age">
+        <rdfs:comment xml:lang="en">The age of the patient involved in the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient_age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_sex -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_sex">
+        <rdfs:comment xml:lang="en">The biological sex of the patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient_sex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#probability -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#probability">
+        <rdfs:comment xml:lang="en">The likelihood of the risk occurring.</rdfs:comment>
+        <rdfs:label xml:lang="en">probability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#regulatory_framework -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#regulatory_framework">
+        <rdfs:comment xml:lang="en">The legal framework applicable to the device (e.g., MDR or IVDR).</rdfs:comment>
+        <rdfs:label xml:lang="en">regulatory_framework</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#report_date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#report_date">
+        <rdfs:comment xml:lang="en">The date when the incident was reported to authorities.</rdfs:comment>
+        <rdfs:label xml:lang="en">report_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_category -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_category">
+        <rdfs:comment xml:lang="en">The overarching category of the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_class -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_class">
+        <rdfs:comment xml:lang="en">The regulatory risk classification of the device (e.g., Class III).</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_class</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_id">
+        <rdfs:comment xml:lang="en">The unique identifier for the risk record.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_name">
+        <rdfs:comment xml:lang="en">The specific name of the identified risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#scope -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#scope">
+        <rdfs:comment xml:lang="en">The scope of affected products in an FSCA.</rdfs:comment>
+        <rdfs:label xml:lang="en">scope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#status -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#status">
+        <rdfs:comment xml:lang="en">The current status of the incident or FSCA (e.g., Open, Closed).</rdfs:comment>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#udi_di -->
+
+
+    <owl:DatatypeProperty rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#udi_di">
+        <rdfs:comment xml:lang="en">The Unique Device Identifier - Device Identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">udi_di</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:comment xml:lang="en">A corporate or administrative entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <owl:disjointWith rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice"/>
+        <rdfs:comment xml:lang="en">A medical device that relies on a source of electrical energy or any source of power.</rdfs:comment>
+        <rdfs:label xml:lang="en">Active Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveImplant -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice"/>
+        <rdfs:comment xml:lang="en">An implantable device that relies on an energy source.</rdfs:comment>
+        <rdfs:label xml:lang="en">Active Implant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ContaminationRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk arising from biological or chemical contamination of the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contamination Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#CybersecurityRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk arising from software vulnerabilities or unauthorized access.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cybersecurity Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A medical device according to the MDR/IVDR regulatory framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DiagnosticRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk related to false positives or false negatives in IVD devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">Diagnostic Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Field Safety Corrective Action taken to mitigate a risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">F S C A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice"/>
+        <rdfs:comment xml:lang="en">An active medical device which is intended to be totally or partially introduced into the human body.</rdfs:comment>
+        <rdfs:label xml:lang="en">Implantable Active Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:comment xml:lang="en">A device intended to be totally introduced into the human body through clinical intervention.</rdfs:comment>
+        <rdfs:label xml:lang="en">Implantable Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InSituCorrection -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"/>
+        <rdfs:comment xml:lang="en">Action taken to correct or update a device without removing it from the user.</rdfs:comment>
+        <rdfs:label xml:lang="en">In Situ Correction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"/>
+        <rdfs:comment xml:lang="en">A medical device intended by the manufacturer for the examination of specimens derived from the human body.</rdfs:comment>
+        <rdfs:label xml:lang="en">In Vitro Diagnostic Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An adverse event or serious incident involving a medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InfectionRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk of the patient developing an infection due to the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Infection Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk of physical harm or tissue damage to the patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InterferenceRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk due to electromagnetic or environmental interference.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interference Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MalfunctionRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk of the device failing to perform its intended function.</rdfs:comment>
+        <rdfs:label xml:lang="en">Malfunction Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:comment xml:lang="en">The corporate entity responsible for manufacturing the medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MaterialRisk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"/>
+        <rdfs:comment xml:lang="en">Risk related to the degradation, wear, or toxicity of the device materials.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Recall -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Recall">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"/>
+        <rdfs:comment xml:lang="en">Action to return the medical device to the manufacturer or supplier.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A potential hazard or clinical risk associated with the use of a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"/>
+        <rdfs:comment xml:lang="en">Communication sent to users detailing important safety information.</rdfs:comment>
+        <rdfs:label xml:lang="en">Safety Alert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SelfTestDevice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SelfTestDevice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice"/>
+        <rdfs:comment xml:lang="en">An IVD device intended by the manufacturer to be able to be used by lay persons.</rdfs:comment>
+        <rdfs:label xml:lang="en">Self Test Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"/>
+        <rdfs:comment xml:lang="en">An incident that directly or indirectly led to death or a serious deterioration in the state of health.</rdfs:comment>
+        <rdfs:label xml:lang="en">Serious Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#UserNotice -->
+
+
+    <owl:Class rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#UserNotice">
+        <rdfs:subClassOf rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"/>
+        <rdfs:comment xml:lang="en">A formal notification to users regarding device usage instructions.</rdfs:comment>
+        <rdfs:label xml:lang="en">User Notice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Medtronic -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic">
+        <owl:sameAs rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001 -->
+
+
+    <rdf:Description rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Product_recall -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Product_recall">
+        <owl:sameAs rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001 -->
+
+
+    <rdf:Description rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ventricular_assist_device -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ventricular_assist_device">
+        <owl:sameAs rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001 -->
+
+
+    <rdf:Description rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"/>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001">
+        <rdf:type rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice"/>
+        <hasManufacturer rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"/>
+        <device_id>DEV-001</device_id>
+        <device_name>HeartMate 3 LVAD</device_name>
+        <is_active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_active>
+        <is_implantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_implantable>
+        <rdfs:comment xml:lang="en">Instance of an active implantable device from dispositivos.csv.</rdfs:comment>
+        <rdfs:label xml:lang="en">HeartMate 3 LVAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001">
+        <rdf:type rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert"/>
+        <addressesIncident rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001"/>
+        <action_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</action_date>
+        <fsca_id>FSCA-001</fsca_id>
+        <status>Open</status>
+        <rdfs:comment xml:lang="en">Field safety corrective action from acciones_correctivas.csv.</rdfs:comment>
+        <rdfs:label xml:lang="en">Safety Alert HeartMate 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001">
+        <rdf:type rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident"/>
+        <associatedWithRisk rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003"/>
+        <involvesDevice rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"/>
+        <reportedBy rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"/>
+        <incident_id>INC-001</incident_id>
+        <patient_age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</patient_age>
+        <report_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</report_date>
+        <rdfs:comment xml:lang="en">Incident report extracted from incidentes.csv.</rdfs:comment>
+        <rdfs:label xml:lang="en">Serious patient injury - embolic stroke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001">
+        <rdf:type rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"/>
+        <manufacturesDevice rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"/>
+        <country>Ireland</country>
+        <manufacturer_id>MAN-001</manufacturer_id>
+        <name>Medtronic plc</name>
+        <rdfs:comment xml:lang="en">Instance representing Medtronic plc, extracted from fabricantes.csv.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003 -->
+
+
+    <owl:NamedIndividual rdf:about="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003">
+        <rdf:type rdf:resource="https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk"/>
+        <risk_id>RSK-003</risk_id>
+        <rdfs:comment xml:lang="en">Risk instance representing device-related thrombosis from riesgos.csv.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thrombosis - device-related</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

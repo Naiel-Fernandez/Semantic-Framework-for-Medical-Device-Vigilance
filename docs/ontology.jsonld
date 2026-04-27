@@ -1,0 +1,1200 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Medtronic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Product_recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Ventricular_assist_device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A corporate or administrative entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-27"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "naiel-fernandez"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "MedTech Safety & Traceability Ontology (EUDAMED-MDR)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A medical device that relies on a source of electrical energy or any source of power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An implantable device that relies on an energy source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active Implant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk arising from biological or chemical contamination of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contamination Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk arising from software vulnerabilities or unauthorized access."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cybersecurity Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Instance of an active implantable device from dispositivos.csv."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_id" : [ {
+    "@value" : "DEV-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_name" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A medical device according to the MDR/IVDR regulatory framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to false positives or false negatives in IVD devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diagnostic Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Field Safety Corrective Action taken to mitigate a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "F S C A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Field safety corrective action from acciones_correctivas.csv."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Safety Alert HeartMate 3"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-01T00:00:00"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#fsca_id" : [ {
+    "@value" : "FSCA-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#status" : [ {
+    "@value" : "Open"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Incident report extracted from incidentes.csv."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serious patient injury - embolic stroke"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#incident_id" : [ {
+    "@value" : "INC-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-15T00:00:00"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An active medical device which is intended to be totally or partially introduced into the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implantable Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device intended to be totally introduced into the human body through clinical intervention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implantable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InSituCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Action taken to correct or update a device without removing it from the user."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In Situ Correction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A medical device intended by the manufacturer for the examination of specimens derived from the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In Vitro Diagnostic Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An adverse event or serious incident involving a medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk of the patient developing an infection due to the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infection Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk of physical harm or tissue damage to the patient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Injury Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk due to electromagnetic or environmental interference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interference Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Instance representing Medtronic plc, extracted from fabricantes.csv."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medtronic plc"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturer_id" : [ {
+    "@value" : "MAN-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturesDevice" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#name" : [ {
+    "@value" : "Medtronic plc"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk of the device failing to perform its intended function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Malfunction Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The corporate entity responsible for manufacturing the medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to the degradation, wear, or toxicity of the device materials."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk instance representing device-related thrombosis from riesgos.csv."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thrombosis - device-related"
+  } ],
+  "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_id" : [ {
+    "@value" : "RSK-003"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Action to return the medical device to the manufacturer or supplier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A potential hazard or clinical risk associated with the use of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Communication sent to users detailing important safety information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Safety Alert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An IVD device intended by the manufacturer to be able to be used by lay persons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Self Test Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An incident that directly or indirectly led to death or a serious deterioration in the state of health."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serious Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#UserNotice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A formal notification to users regarding device usage instructions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "User Notice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#action_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date when the corrective action was initiated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "action_date"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a corrective action (FSCA) to the incident it addresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "addresses incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#affectsDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a specific risk category to the types of devices it generally affects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affects device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an incident to the identified IMDRF risk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "associated with risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#authorization_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The regulatory authorization number of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "authorization_number"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#closure_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date when the corrective action was officially closed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closure_date"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#competent_authority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The national authority overseeing the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "competent_authority"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#contact_email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contact email for the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact_email"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#corrective_action_taken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if a corrective action was taken following the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "corrective_action_taken"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#countries_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of countries affected by the incident or FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "countries_affected"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The country of origin for the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "country"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country_reported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The country where the incident occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "country_reported"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A textual description of the event, risk, or action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#detection_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date when the incident was first detected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "detection_date"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique internal identifier for the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "device_id"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The commercial name of the medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "device_name"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#devices_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The number of device units affected by a recall or alert."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "devices_affected"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_fsca_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The official EUDAMED reference number for the FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_fsca_ref"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_incident_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The official EUDAMED reference number for the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_incident_ref"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_srn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Single Registration Number of the manufacturer in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_srn"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#event_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The exact date the adverse event took place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "event_date"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#fsca_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique identifier for the Field Safety Corrective Action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fsca_id"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a medical device to its manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#imdrf_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The official IMDRF code identifying the type of risk or event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "imdrf_code"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#incident_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique identifier for the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "incident_id"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#intended_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The medical purpose for which the device is intended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "intended_purpose"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the medical device involved in a specific incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "involves device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Boolean flag indicating if the device is active (powered)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_active"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_implantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Boolean flag indicating if the device is implantable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_implantable"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_ivd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Boolean flag indicating if the device is an IVD."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_ivd"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_reusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Boolean flag indicating if the device is reusable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_reusable"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturer_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique identifier for the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manufacturer_id"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturesDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a manufacturer to the devices it produces (Inverse of hasManufacturer)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manufactures device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The clinical outcome of the patient following the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "outcome"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The age of the patient involved in the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "patient_age"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The biological sex of the patient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "patient_sex"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The likelihood of the risk occurring."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "probability"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#regulatory_framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The legal framework applicable to the device (e.g., MDR or IVDR)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "regulatory_framework"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#report_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date when the incident was reported to authorities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "report_date"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the manufacturer that reported the incident to EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reported by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The overarching category of the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_category"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The regulatory risk classification of the device (e.g., Class III)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_class"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unique identifier for the risk record."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_id"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The specific name of the identified risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_name"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The scope of affected products in an FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "scope"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The severity level of a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "severity"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The current status of the incident or FSCA (e.g., Open, Closed)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "status"
+  } ]
+}, {
+  "@id" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#udi_di",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Unique Device Identifier - Device Identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "udi_di"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

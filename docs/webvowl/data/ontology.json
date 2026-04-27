@@ -1,0 +1,1955 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "MedTech Safety & Traceability Ontology (EUDAMED-MDR)"
+    },
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "version" : "1.0",
+    "author" : [ "naiel-fernandez" ],
+    "comments" : {
+      "en" : "Ontology for the MDR/IVDR regulatory framework representing Devices, Manufacturers, Incidents, Risks, and Corrective Actions."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "naiel-fernandez",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-27",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "MedTech Safety & Traceability Ontology (EUDAMED-MDR)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InjuryRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#RSK-003",
+      "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+      "comment" : {
+        "en" : "Risk instance representing device-related thrombosis from riesgos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk of physical harm or tissue damage to the patient."
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FSCA",
+      "en" : "F S C A"
+    },
+    "subClasses" : [ "13", "14", "15", "16" ],
+    "comment" : {
+      "en" : "Field Safety Corrective Action taken to mitigate a risk."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization"
+    },
+    "subClasses" : [ "36" ],
+    "comment" : {
+      "en" : "A corporate or administrative entity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Device"
+    },
+    "subClasses" : [ "40" ],
+    "comment" : {
+      "en" : "A device intended to be totally introduced into the human body through clinical intervention."
+    },
+    "id" : "38",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Risk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "subClasses" : [ "46", "47", "48", "4", "49", "50", "51", "52" ],
+    "comment" : {
+      "en" : "A potential hazard or clinical risk associated with the use of a device."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#UserNotice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "en" : "User Notice"
+    },
+    "comment" : {
+      "en" : "A formal notification to users regarding device usage instructions."
+    },
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MaterialRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "Material Risk"
+    },
+    "comment" : {
+      "en" : "Risk related to the degradation, wear, or toxicity of the device materials."
+    },
+    "id" : "51",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Incident",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "subClasses" : [ "56" ],
+    "comment" : {
+      "en" : "An adverse event or serious incident involving a medical device."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Device"
+    },
+    "subClasses" : [ "57" ],
+    "comment" : {
+      "en" : "A medical device that relies on a source of electrical energy or any source of power."
+    },
+    "id" : "27",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InfectionRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk"
+    },
+    "comment" : {
+      "en" : "Risk of the patient developing an infection due to the device."
+    },
+    "id" : "46",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ImplantableActiveDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "Implantable Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DEV-001",
+      "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+      "comment" : {
+        "en" : "Instance of an active implantable device from dispositivos.csv."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "An active medical device which is intended to be totally or partially introduced into the human body."
+    },
+    "id" : "57",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Device",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "subClasses" : [ "27", "70", "38" ],
+    "comment" : {
+      "en" : "A medical device according to the MDR/IVDR regulatory framework."
+    },
+    "id" : "39"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Manufacturer",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MAN-001",
+      "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+      "comment" : {
+        "en" : "Instance representing Medtronic plc, extracted from fabricantes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "The corporate entity responsible for manufacturing the medical device."
+    },
+    "id" : "36",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SelfTestDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "Self Test Device"
+    },
+    "comment" : {
+      "en" : "An IVD device intended by the manufacturer to be able to be used by lay persons."
+    },
+    "id" : "73",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#CybersecurityRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "en" : "Cybersecurity Risk"
+    },
+    "comment" : {
+      "en" : "Risk arising from software vulnerabilities or unauthorized access."
+    },
+    "id" : "50",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ContaminationRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "Contamination Risk"
+    },
+    "comment" : {
+      "en" : "Risk arising from biological or chemical contamination of the device."
+    },
+    "id" : "49",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SafetyAlert",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#FSCA-001",
+      "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+      "comment" : {
+        "en" : "Field safety corrective action from acciones_correctivas.csv."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "Safety Alert HeartMate 3"
+      }
+    } ],
+    "comment" : {
+      "en" : "Communication sent to users detailing important safety information."
+    },
+    "id" : "16",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InVitroDiagnosticDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "In Vitro Diagnostic Device"
+    },
+    "subClasses" : [ "73" ],
+    "comment" : {
+      "en" : "A medical device intended by the manufacturer for the examination of specimens derived from the human body."
+    },
+    "id" : "70",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InSituCorrection",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In Situ Correction"
+    },
+    "comment" : {
+      "en" : "Action taken to correct or update a device without removing it from the user."
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#SeriousIncident",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#INC-001",
+      "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+      "comment" : {
+        "en" : "Incident report extracted from incidentes.csv."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "Serious patient injury - embolic stroke"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident that directly or indirectly led to death or a serious deterioration in the state of health."
+    },
+    "id" : "56",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#Recall",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "Action to return the medical device to the manufacturer or supplier."
+    },
+    "id" : "15",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#ActiveImplant",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "en" : "Active Implant"
+    },
+    "comment" : {
+      "en" : "An implantable device that relies on an energy source."
+    },
+    "id" : "40",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#DiagnosticRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "en" : "Diagnostic Risk"
+    },
+    "comment" : {
+      "en" : "Risk related to false positives or false negatives in IVD devices."
+    },
+    "id" : "48",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#InterferenceRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "Interference Risk"
+    },
+    "comment" : {
+      "en" : "Risk due to electromagnetic or environmental interference."
+    },
+    "id" : "47",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#MalfunctionRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "comment" : {
+      "en" : "Risk of the device failing to perform its intended function."
+    },
+    "id" : "52",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#authorization_number",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "authorization_number",
+      "en" : "authorization_number"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The regulatory authorization number of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#udi_di",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "udi_di",
+      "en" : "udi_di"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The Unique Device Identifier - Device Identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#devices_affected",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "devices_affected",
+      "en" : "devices_affected"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The number of device units affected by a recall or alert."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_sex",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "patient_sex",
+      "en" : "patient_sex"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The biological sex of the patient."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_implantable",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "is_implantable",
+      "en" : "is_implantable"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Boolean flag indicating if the device is implantable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#addressesIncident",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "addressesIncident",
+      "en" : "addresses incident"
+    },
+    "cardinality" : "1",
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a corrective action (FSCA) to the incident it addresses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_name",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "device_name",
+      "en" : "device_name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The commercial name of the medical device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_active",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "is_active",
+      "en" : "is_active"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Boolean flag indicating if the device is active (powered)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#scope",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "scope",
+      "en" : "scope"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The scope of affected products in an FSCA."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#severity",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "severity",
+      "en" : "severity"
+    },
+    "cardinality" : "1",
+    "domain" : "5",
+    "comment" : {
+      "en" : "The severity level of a risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_reusable",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "is_reusable",
+      "en" : "is_reusable"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Boolean flag indicating if the device is reusable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_incident_ref",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "eudamed_incident_ref",
+      "en" : "eudamed_incident_ref"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The official EUDAMED reference number for the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#incident_id",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "incident_id",
+      "en" : "incident_id"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The unique identifier for the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#action_date",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "action_date",
+      "en" : "action_date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The date when the corrective action was initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#hasManufacturer",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
+    },
+    "cardinality" : "1",
+    "domain" : "39",
+    "comment" : {
+      "en" : "Links a medical device to its manufacturer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "range" : "5",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "5",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "5",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#affectsDeviceType",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "affectsDeviceType",
+      "en" : "affects device type"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Links a specific risk category to the types of devices it generally affects."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#probability",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "probability",
+      "en" : "probability"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The likelihood of the risk occurring."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#report_date",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "report_date",
+      "en" : "report_date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The date when the incident was reported to authorities."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#device_id",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "device_id",
+      "en" : "device_id"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The unique internal identifier for the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#associatedWithRisk",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "associatedWithRisk",
+      "en" : "associated with risk"
+    },
+    "cardinality" : "1",
+    "domain" : "20",
+    "comment" : {
+      "en" : "Links an incident to the identified IMDRF risk category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#corrective_action_taken",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "corrective_action_taken",
+      "en" : "corrective_action_taken"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates if a corrective action was taken following the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "38",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "35",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#closure_date",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "closure_date",
+      "en" : "closure_date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The date when the corrective action was officially closed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#intended_purpose",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "intended_purpose",
+      "en" : "intended_purpose"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The medical purpose for which the device is intended."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_name",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "risk_name",
+      "en" : "risk_name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The specific name of the identified risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#contact_email",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "contact_email",
+      "en" : "contact_email"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Contact email for the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#description",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A textual description of the event, risk, or action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#involvesDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device"
+    },
+    "cardinality" : "1",
+    "domain" : "20",
+    "comment" : {
+      "en" : "Indicates the medical device involved in a specific incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturer_id",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "manufacturer_id",
+      "en" : "manufacturer_id"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The unique identifier for the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#name",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The name of the entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_id",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "risk_id",
+      "en" : "risk_id"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The unique identifier for the risk record."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#fsca_id",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "fsca_id",
+      "en" : "fsca_id"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The unique identifier for the Field Safety Corrective Action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_fsca_ref",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "eudamed_fsca_ref",
+      "en" : "eudamed_fsca_ref"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The official EUDAMED reference number for the FSCA."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#countries_affected",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "countries_affected",
+      "en" : "countries_affected"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "List of countries affected by the incident or FSCA."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#patient_age",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "patient_age",
+      "en" : "patient_age"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The age of the patient involved in the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#outcome",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "outcome",
+      "en" : "outcome"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The clinical outcome of the patient following the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#eudamed_srn",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "eudamed_srn",
+      "en" : "eudamed_srn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The Single Registration Number of the manufacturer in EUDAMED."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "range" : "39",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#competent_authority",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "competent_authority",
+      "en" : "competent_authority"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The national authority overseeing the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "range" : "39",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "70",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#detection_date",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "detection_date",
+      "en" : "detection_date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The date when the incident was first detected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_category",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "risk_category",
+      "en" : "risk_category"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The overarching category of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "range" : "20",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "5",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#is_ivd",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "is_ivd",
+      "en" : "is_ivd"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Boolean flag indicating if the device is an IVD."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#risk_class",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "risk_class",
+      "en" : "risk_class"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The regulatory risk classification of the device (e.g., Class III)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "range" : "27",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "5",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "5",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "5",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country_reported",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "country_reported",
+      "en" : "country_reported"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The country where the incident occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "range" : "70",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#imdrf_code",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "imdrf_code",
+      "en" : "imdrf_code"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The official IMDRF code identifying the type of risk or event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#event_date",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "event_date",
+      "en" : "event_date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The exact date the adverse event took place."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#regulatory_framework",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "regulatory_framework",
+      "en" : "regulatory_framework"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The legal framework applicable to the device (e.g., MDR or IVDR)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#country",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "country",
+      "en" : "country"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The country of origin for the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#reportedBy",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "cardinality" : "1",
+    "domain" : "20",
+    "comment" : {
+      "en" : "Identifies the manufacturer that reported the incident to EUDAMED."
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#status",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The current status of the incident or FSCA (e.g., Open, Closed)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc#manufacturesDevice",
+    "baseIri" : "https://naiel-fernandez.github.io/Semantic-Framework-for-Medical-Device-Vigilance/doc",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "manufacturesDevice",
+      "en" : "manufactures device"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Links a manufacturer to the devices it produces (Inverse of hasManufacturer)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "137"
+  } ]
+}
